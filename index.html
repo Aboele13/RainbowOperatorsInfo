@@ -182,17 +182,18 @@
             const sideValue = document.getElementById('side').value.toLowerCase();
             const speedValue = document.getElementById('speed').value;
             const gadgetValue = document.getElementById('gadgets').value.toLowerCase();
-
+        
+            // Checkbox states
             const autoAcogChecked = document.getElementById('autoAcog').checked;
             const secShotgunChecked = document.getElementById('secShotgun').checked;
             const extraCamChecked = document.getElementById('extraCam').checked;
             const openHatchChecked = document.getElementById('openHatch').checked;
             const rushBarricadeChecked = document.getElementById('rushBarricade').checked;
             const makeRotateChecked = document.getElementById('makeRotate').checked;
-
+        
             const table = document.getElementById('opsTable');
             const rows = table.querySelectorAll('tr:not(:first-child)');
-
+        
             rows.forEach(row => {
                 const cells = Array.from(row.children);
                 const nameCell = cells[0];
@@ -205,19 +206,20 @@
                 const hatchCell = cells[9];
                 const rushCell = cells[10];
                 const rotateCell = cells[11];
-
+        
                 const nameMatch = nameCell && nameCell.textContent.toLowerCase().includes(searchValue);
                 const sideMatch = sideCell && sideCell.textContent.toLowerCase() === sideValue;
                 const speedMatch = speedCell && (speedValue === "Any" || speedCell.textContent === speedValue);
                 const gadgetMatch = gadgetCell && (gadgetValue === "any" || gadgetCell.textContent.toLowerCase().includes(gadgetValue));
-                
+        
+                // Checkbox match logic
                 const autoAcogMatch = !autoAcogChecked || (acogCell && acogCell.textContent.trim() === "True");
                 const secShotgunMatch = !secShotgunChecked || (shotgunCell && shotgunCell.textContent.trim() === "True");
                 const extraCamMatch = !extraCamChecked || (camCell && camCell.textContent.trim() === "True");
                 const openHatchMatch = !openHatchChecked || (hatchCell && hatchCell.textContent.trim() === "True");
                 const rushBarricadeMatch = !rushBarricadeChecked || (rushCell && rushCell.textContent.trim() === "True");
                 const makeRotateMatch = !makeRotateChecked || (rotateCell && rotateCell.textContent.trim() === "True");
-
+        
                 if (nameMatch && sideMatch && speedMatch && gadgetMatch &&
                     autoAcogMatch && secShotgunMatch && extraCamMatch && openHatchMatch && rushBarricadeMatch && makeRotateMatch) {
                     row.style.display = '';
@@ -226,6 +228,7 @@
                 }
             });
         }
+        
 
         document.addEventListener('DOMContentLoaded', loadCSV);
     </script>
