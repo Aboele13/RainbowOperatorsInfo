@@ -105,12 +105,12 @@
     </div>
 
     <div class="checkbox-group">
-        <label><input type="checkbox" id="autoAcog"> Auto ACOG</label>
-        <label><input type="checkbox" id="secShotgun"> Secondary Shotgun</label>
-        <label><input type="checkbox" id="extraCam"> Extra Cam</label>
-        <label><input type="checkbox" id="openHatch"> Open Hatches</label>
-        <label><input type="checkbox" id="rushBarricade"> Rush Barricades</label>
-        <label><input type="checkbox" id="makeRotate"> Make Rotates</label>
+        <label><input type="checkbox" id="autoAcog" onchange="filterTable()"> Auto ACOG</label>
+        <label><input type="checkbox" id="secShotgun" onchange="filterTable()"> Secondary Shotgun</label>
+        <label><input type="checkbox" id="extraCam" onchange="filterTable()"> Extra Cam</label>
+        <label><input type="checkbox" id="openHatch" onchange="filterTable()"> Open Hatches</label>
+        <label><input type="checkbox" id="rushBarricade" onchange="filterTable()"> Rush Barricades</label>
+        <label><input type="checkbox" id="makeRotate" onchange="filterTable()"> Make Rotates</label>
     </div>
 
     <div class="search-container">
@@ -125,16 +125,16 @@
             const side = document.getElementById('side').value;
             const gadgetsDropdown = document.getElementById('gadgets');
             gadgetsDropdown.innerHTML = ''; // Clear previous options
-
-            const attackerGadgets = ["Any", "Breach Charge", "Claymore", "Frag Grenade", "Hard Breach Charge", "Smoke Grenade", "Stun Grenade", "Impact Emp Grenade"];
+        
+            const attackerGadgets = ["Any", "Breach Charge", "Claymore", "Frag Grenade", "Hard Breach Charge", "Smoke Grenade", "Stun Grenade", "Impact EMP Grenade"];
             const defenderGadgets = ["Any", "Barbed Wire", "Bulletproof Camera", "Deployable Shield", "Observation Blocker", "Impact Grenade", "Nitro Cell", "Proximity Alarm"];
-
+        
             const gadgetsOptions = side === "Attacker" ? attackerGadgets : defenderGadgets;
-
+        
             gadgetsOptions.forEach(gadget => {
                 const option = document.createElement('option');
                 option.value = gadget;
-                option.textContent = gadget;
+                option.textContent = gadget; // Preserve original case
                 gadgetsDropdown.appendChild(option);
             });
         }
@@ -181,7 +181,7 @@
             const searchValue = document.getElementById('search').value.toLowerCase();
             const sideValue = document.getElementById('side').value.toLowerCase();
             const speedValue = document.getElementById('speed').value;
-            const gadgetValue = document.getElementById('gadgets').value.toLowerCase();
+            const gadgetValue = document.getElementById('gadgets').value;
         
             // Checkbox states
             const autoAcogChecked = document.getElementById('autoAcog').checked;
@@ -213,9 +213,9 @@
                 const speedMatch = speedCell && (speedValue === "Any" || speedCell.textContent === speedValue);
                 
                 let gadgetMatch = true;
-                if (gadgetValue !== "any") {
-                    const gadgets = gadgetCell ? gadgetCell.textContent.toLowerCase().split(',').map(g => g.trim()) : [];
-                    gadgetMatch = gadgets.includes(gadgetValue);
+                if (gadgetValue !== "Any") {
+                    const gadgets = gadgetCell ? gadgetCell.textContent.split(',').map(g => g.trim()) : [];
+                    gadgetMatch = gadgets.includes(gadgetValue); // No conversion to lowercase
                 }
         
                 // Checkbox match logic
