@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Six Siege - Operator Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header {
+            margin-top: 50px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .dropdowns {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .dropdowns select {
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .dropdowns label {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .checkbox-group {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .checkbox-group label {
+            font-size: 18px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .search-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-container input[type="text"] {
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+        table {
+            margin-top: 30px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Rainbow Six Siege - Operator Information</div>
+
+    <div class="dropdowns">
+        <div>
+            <label for="side">Side:</label>
+            <select id="side" onchange="updateGadgets(); filterTable()">
+                <option value="Attacker" selected>Attacker</option>
+                <option value="Defender">Defender</option>
+            </select>
+        </div>
+        <div>
+            <label for="speed">Speed:</label>
+            <select id="speed" onchange="filterTable()">
+                <option value="Any" selected>Any</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div>
+            <label for="gadgets">Gadgets:</label>
+            <select id="gadgets" onchange="filterTable()">
+                <option value="Any" selected>Any</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="checkbox-group">
+        <label><input type="checkbox" id="autoAcog"> Auto ACOG</label>
+        <label><input type="checkbox" id="secShotgun"> Secondary Shotgun</label>
+        <label><input type="checkbox" id="extraCam"> Extra Cam</label>
+        <label><input type="checkbox" id="openHatch"> Open Hatches</label>
+        <label><input type="checkbox" id="rushBarricade"> Rush Barricades</label>
+        <label><input type="checkbox" id="makeRotate"> Make Rotates</label>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search" oninput="filterTable()" placeholder="Search for operator name...">
+    </div>
+
+    <table id="opsTable"></table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script>
+        function updateGadgets() {
+            const side = document.getElementById('side').value;
+            const gadgetsDropdown = document.getElementById('gadgets');
+            gadgetsDropdown.innerHTML = ''; // Clear previous options
+
+            const attackerGadgets = ["Any", "Breach Charge", "Claymore", "Frag Grenade", "Hard Breach Charge", "Smoke Grenade", "Stun Grenade", "Impact Emp Grenade"];
+            const defenderGadgets = ["Any", "Barbed Wire", "Bulletproof Camera", "Deployable Shield", "Observation Blocker", "Impact Grenade", "Nitro Cell", "Proximity Alarm"];
+
+            const gadgetsOptions = side === "Attacker" ? attackerGadgets : defenderGadgets;
+
+            gadgetsOptions.forEach(gadget => {
+                const option = document.createElement('option');
+                option.value = gadget;
+                option.textContent = gadget;
+                gadgetsDropdown.appendChild(option);
+            });
+        }
+
+        function loadCSV() {
+            const csvUrl = `https://aboele13.github.io/RainbowOperatorsInfo/completed_operators_list.csv`;
+
+            Papa.parse(csvUrl, {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    const table = document.getElementById('opsTable');
+                    table.innerHTML = '';
+
+                    // Create table headers
+                    const headers = results.meta.fields;
+                    const headerRow = document.createElement('tr');
+                    headers.forEach(header => {
+                        const th = document.createElement('th');
+                        th.textContent = header;
+                        headerRow.appendChild(th);
+                    });
+                    table.appendChild(headerRow);
+
+                    // Create table rows
+                    results.data.forEach(row => {
+                        const tr = document.createElement('tr');
+                        headers.forEach(header => {
+                            const td = document.createElement('td');
+                            td.textContent = row[header] || ''; // Handle empty values
+                            tr.appendChild(td);
+                        });
+                        table.appendChild(tr);
+                    });
+
+                    // Apply filters
+                    filterTable();
+                }
+            });
+        }
+
+        function filterTable() {
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            const sideValue = document.getElementById('side').value.toLowerCase();
+            const speedValue = document.getElementById('speed').value;
+            const gadgetValue = document.getElementById('gadgets').value.toLowerCase();
+
+            const autoAcogChecked = document.getElementById('autoAcog').checked;
+            const secShotgunChecked = document.getElementById('secShotgun').checked;
+            const extraCamChecked = document.getElementById('extraCam').checked;
+            const openHatchChecked = document.getElementById('openHatch').checked;
+            const rushBarricadeChecked = document.getElementById('rushBarricade').checked;
+            const makeRotateChecked = document.getElementById('makeRotate').checked;
+
+            const table = document.getElementById('opsTable');
+            const rows = table.querySelectorAll('tr:not(:first-child)');
+
+            rows.forEach(row => {
+                const cells = Array.from(row.children);
+                const nameCell = cells[0];
+                const sideCell = cells[1];
+                const speedCell = cells[2];
+                const gadgetCell = cells[5]; // Adjust index based on your table structure
+                const acogCell = cells[6];
+                const shotgunCell = cells[7];
+                const camCell = cells[8];
+                const hatchCell = cells[9];
+                const rushCell = cells[10];
+                const rotateCell = cells[11];
+
+                const nameMatch = nameCell && nameCell.textContent.toLowerCase().includes(searchValue);
+                const sideMatch = sideCell && sideCell.textContent.toLowerCase() === sideValue;
+                const speedMatch = speedCell && (speedValue === "Any" || speedCell.textContent === speedValue);
+                const gadgetMatch = gadgetCell && (gadgetValue === "any" || gadgetCell.textContent.toLowerCase().includes(gadgetValue));
+                
+                const autoAcogMatch = !autoAcogChecked || (acogCell && acogCell.textContent.trim() === "True");
+                const secShotgunMatch = !secShotgunChecked || (shotgunCell && shotgunCell.textContent.trim() === "True");
+                const extraCamMatch = !extraCamChecked || (camCell && camCell.textContent.trim() === "True");
+                const openHatchMatch = !openHatchChecked || (hatchCell && hatchCell.textContent.trim() === "True");
+                const rushBarricadeMatch = !rushBarricadeChecked || (rushCell && rushCell.textContent.trim() === "True");
+                const makeRotateMatch = !makeRotateChecked || (rotateCell && rotateCell.textContent.trim() === "True");
+
+                if (nameMatch && sideMatch && speedMatch && gadgetMatch &&
+                    autoAcogMatch && secShotgunMatch && extraCamMatch && openHatchMatch && rushBarricadeMatch && makeRotateMatch) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', loadCSV);
+    </script>
+</body>
+</html>

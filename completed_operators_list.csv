@@ -1,0 +1,74 @@
+Name,Side,Speed,Primaries,Secondaries,Gadgets,Auto ACOG,Secondary Shotgun,Extra Cam,Open Hatches,Rush Barricades,Make Rotates
+Striker,Attacker,2,"M4 (Assault Rifle), M249 (Light Machine Gun)","5.7 USG (Handgun), ITA12S (Shotgun)","Breach Charge, Claymore, Frag Grenade, Hard Breach Charge, Smoke Grenade, Stun Grenade, Impact Emp Grenade",True,True,False,True,True,False
+Sentry,Defender,2,"Commando 9 (Assault Rifle), M870 (Shotgun)","C75 Auto (Machine Pistol), Super Shorty (Shotgun)","Barbed Wire, Bulletproof Camera, Deployable Shield, Observation Blocker, Impact Grenade, Nitro Cell, Proximity Alarm",False,True,True,True,False,True
+Kapkan,Defender,2,"9x19VSN (Submachine Gun), SASG-12 (Shotgun)","PMM (Handgun), GSh-18 (Handgun)","Nitro Cell, Bulletproof Camera",False,False,True,False,False,False
+Tachanka,Defender,1,"DP27 (Light Machine Gun), 9x19VSN (Submachine Gun)","PMM (Handgun), GSh-18 (Handgun), Bearing 9 (Machine Pistol)","Barbed Wire, Proximity Alarm, Deployable Shield",False,False,False,False,False,True
+Glaz,Attacker,3,OTs-03 (Marksman Rifle),"PMM (Handgun), Gonne-6 (Hand Cannon), Bearing 9 (Machine Pistol)","Smoke Grenade, Frag Grenade, Claymore",False,False,False,True,True,False
+Fuze,Attacker,1,"AK-12 (Assault Rifle), 6P41 (Light Machine Gun), Ballistic Shield (Shield)","PMM (Handgun), GSh-18 (Handgun)","Breach Charge, Hard Breach Charge, Smoke Grenade",True,False,False,True,True,False
+Iq,Attacker,3,"AUG A2 (Assault Rifle), 552 Commando (Assault Rifle), G8A1 (Light Machine Gun)",P12 (Handgun),"Breach Charge, Frag Grenade, Claymore",True,False,False,True,True,False
+Blitz,Attacker,2,G52-Tactical Shield (Shield),P12 (Handgun),"Smoke Grenade, Breach Charge",False,False,False,True,True,False
+Bandit,Defender,3,"MP7 (Submachine Gun), M870 (Shotgun)",P12 (Handgun),"Barbed Wire, Nitro Cell",False,False,False,False,False,False
+Jager,Defender,2,"M870 (Shotgun), 416-C Carbine (Assault Rifle)",P12 (Handgun),"Bulletproof Camera, Observation Blocker",False,False,True,False,False,False
+Rook,Defender,1,"MP5 (Submachine Gun), P90 (Submachine Gun), SG-CQB (Shotgun)","P9 (Handgun), LFP586 (Handgun)","Proximity Alarm, Impact Grenade, Observation Blocker",True,False,False,False,False,False
+Doc,Defender,1,"MP5 (Submachine Gun), P90 (Submachine Gun), SG-CQB (Shotgun)","P9 (Handgun), LFP586 (Handgun), Bailiff 410 (Shotgun)","Bulletproof Camera, Barbed Wire",True,True,True,True,False,True
+Twitch,Attacker,2,"F2 (Assault Rifle), 417 (Marksman Rifle), SG-CQB (Shotgun)","P9 (Handgun), LFP586 (Handgun)","Smoke Grenade, Claymore",True,False,True,False,False,False
+Montagne,Attacker,1,LE ROC SHIELD (Shield),"P9 (Handgun), LFP586 (Handgun)","Hard Breach Charge, Smoke Grenade, Impact Emp Grenade",False,False,False,True,False,False
+Thermite,Attacker,2,"M1014 (Shotgun), 556xi (Assault Rifle)","5.7 USG (Handgun), M45 MEUSOC (Handgun)","Smoke Grenade, Stun Grenade",True,False,False,True,False,False
+Pulse,Defender,3,"UMP45 (Submachine Gun), M1014 (Shotgun)","5.7 USG (Handgun), M45 MEUSOC (Handgun)","Nitro Cell, Deployable Shield, Observation Blocker",False,False,False,False,False,False
+Castle,Defender,2,"UMP45 (Submachine Gun), M1014 (Shotgun)","5.7 USG (Handgun), Super Shorty (Shotgun), M45 MEUSOC (Handgun)","Proximity Alarm, Bulletproof Camera",True,True,True,True,False,True
+Ash,Attacker,3,"G36C (Assault Rifle), R4-C (Assault Rifle)","5.7 USG (Handgun), M45 MEUSOC (Handgun)","Breach Charge, Claymore",True,False,False,True,True,False
+Thatcher,Attacker,1,"AR33 (Assault Rifle), L85A2 (Assault Rifle), M590A1 (Shotgun)",P226 Mk 25 (Handgun),"Breach Charge, Claymore",True,False,False,True,True,False
+Smoke,Defender,2,"M590A1 (Shotgun), FMG-9 (Submachine Gun)","P226 Mk 25 (Handgun), SMG-11 (Machine Pistol)","Barbed Wire, Proximity Alarm",False,False,False,False,False,False
+Sledge,Attacker,1,"L85A2 (Assault Rifle), M590A1 (Shotgun)",P226 Mk 25 (Handgun),"Frag Grenade, Stun Grenade, Impact Emp Grenade",True,False,False,True,True,False
+Mute,Defender,1,"MP5K (Submachine Gun), M590A1 (Shotgun)","P226 Mk 25 (Handgun), SMG-11 (Machine Pistol)","Bulletproof Camera, Nitro Cell",False,False,True,False,False,False
+Frost,Defender,2,"Super 90 (Shotgun), 9mm C1 (Submachine Gun)","Mk1 9mm (Handgun), ITA12S (Shotgun)","Bulletproof Camera, Deployable Shield",True,True,True,True,False,True
+Buck,Attacker,2,"C8-SFW (Assault Rifle), CAMRS (Marksman Rifle)",Mk1 9mm (Handgun),"Hard Breach Charge, Stun Grenade",True,True,False,True,False,False
+Valkyrie,Defender,2,"MPX (Submachine Gun), SPAS-12 (Shotgun)",D-50 (Handgun),"Impact Grenade, Nitro Cell",False,False,False,False,False,False
+Blackbeard,Attacker,2,"Mk17 CQB (Assault Rifle), SR-25 (Marksman Rifle)",D-50 (Handgun),"Stun Grenade, Frag Grenade, Claymore",True,False,False,True,False,False
+Capitao,Attacker,3,"M249 (Light Machine Gun), PARA-308 (Assault Rifle)","Gonne-6 (Hand Cannon), PRB92 (Handgun)","Claymore, Hard Breach Charge, Impact Emp Grenade",True,False,False,True,True,False
+Caveira,Defender,3,"M12 (Submachine Gun), SPAS-15 (Shotgun)",Luison (Handgun),"Proximity Alarm, Impact Grenade, Observation Blocker",False,False,False,False,False,False
+Echo,Defender,1,"MP5SD (Submachine Gun), SuperNova (Shotgun)","Bearing 9 (Machine Pistol), P229 (Handgun)","Impact Grenade, Deployable Shield",True,False,True,False,False,False
+Hibana,Attacker,3,"Type-89 (Assault Rifle), SuperNova (Shotgun)","P229 (Handgun), Bearing 9 (Machine Pistol)","Stun Grenade, Breach Charge",True,False,False,True,True,False
+Jackal,Attacker,2,"C7E (Assault Rifle), PDW9 (Submachine Gun), ITA12L (Shotgun)","USP40 (Handgun), ITA12S (Shotgun)","Claymore, Smoke Grenade",True,True,False,True,False,False
+Mira,Defender,1,"Vector .45 ACP (Submachine Gun), ITA12L (Shotgun)","USP40 (Handgun), ITA12S (Shotgun)","Proximity Alarm, Nitro Cell",False,True,False,True,False,True
+Lesion,Defender,2,"SIX12 SD (Shotgun), T-5 SMG (Submachine Gun)","Q-929 (Handgun), Super Shorty (Shotgun)","Impact Grenade, Bulletproof Camera",False,True,True,True,False,True
+Ying,Attacker,2,"T-95 LSW (Light Machine Gun), SIX12 (Shotgun)",Q-929 (Handgun),"Hard Breach Charge, Smoke Grenade",True,False,False,True,False,False
+Ela,Defender,2,"Scorpion EVO 3 A1 (Submachine Gun), FO-12 (Shotgun)",RG15 (Handgun),"Barbed Wire, Deployable Shield, Impact Grenade",False,False,False,False,False,False
+Zofia,Attacker,1,"LMG-E (Light Machine Gun), M762 (Assault Rifle)",RG15 (Handgun),"Breach Charge, Claymore",True,False,False,True,True,False
+Dokkaebi,Attacker,3,"Mk 14 EBR (Marksman Rifle), BOSG.12.2 (Shotgun)","Gonne-6 (Hand Cannon), SMG-12 (Machine Pistol), C75 Auto (Machine Pistol)","Smoke Grenade, Stun Grenade, Impact Emp Grenade",False,False,False,True,True,False
+Vigil,Defender,3,"K1A (Submachine Gun), BOSG.12.2 (Shotgun)","C75 Auto (Machine Pistol), SMG-12 (Machine Pistol)","Bulletproof Camera, Impact Grenade",False,False,True,False,False,False
+Finka,Attacker,2,"6P41 (Light Machine Gun), SASG-12 (Shotgun), Spear .308 (Assault Rifle)","GSh-18 (Handgun), PMM (Handgun)","Frag Grenade, Smoke Grenade, Stun Grenade",True,False,False,True,False,False
+Lion,Attacker,2,"417 (Marksman Rifle), SG-CQB (Shotgun), V308 (Assault Rifle)","LFP586 (Handgun), P9 (Handgun)","Claymore, Frag Grenade, Stun Grenade",True,False,False,True,False,False
+Alibi,Defender,3,"Mx4 Storm (Submachine Gun), ACS12 (Shotgun)","Keratos .357 (Handgun), Bailiff 410 (Shotgun)","Proximity Alarm, Observation Blocker",False,True,False,True,False,True
+Maestro,Defender,1,"ALDA 5.56 (Light Machine Gun), ACS12 (Shotgun)","Keratos .357 (Handgun), Bailiff 410 (Shotgun)","Barbed Wire, Impact Grenade, Observation Blocker",False,True,True,True,False,True
+Maverick,Attacker,3,"AR-15.50 (Assault Rifle), M4 (Assault Rifle)",1911 TACOPS (Handgun),"Claymore, Smoke Grenade, Stun Grenade",True,False,False,True,False,False
+Clash,Defender,1,CCE Shield (Shield),"P-10C (Handgun), SPSMG9 (Machine Pistol), Super Shorty (Shotgun)","Barbed Wire, Deployable Shield, Impact Grenade",False,True,False,True,False,True
+Kaid,Defender,1,"AUG A3 (Submachine Gun), TCSG12 (Shotgun)",".44 MAG SEMI-AUTO (Handgun), LFP586 (Handgun)","Barbed Wire, Nitro Cell, Observation Blocker",False,False,False,False,False,False
+Nomad,Attacker,2,"AK-74M (Assault Rifle), ARX200 (Assault Rifle)","PRB92 (Handgun), .44 MAG SEMI-AUTO (Handgun)","Breach Charge, Stun Grenade",True,False,False,True,True,False
+Gridlock,Attacker,1,"F90 (Assault Rifle), M249 SAW (Light Machine Gun)","Super Shorty (Shotgun), SDP 9mm (Handgun)","Smoke Grenade, Frag Grenade, Impact Emp Grenade",True,True,False,True,False,False
+Mozzie,Defender,2,"Commando 9 (Assault Rifle), P10 RONI (Submachine Gun)",SDP 9mm (Handgun),"Barbed Wire, Nitro Cell",False,False,True,False,False,False
+Warden,Defender,1,"M590A1 (Shotgun), MPX (Submachine Gun)","P-10C (Handgun), SMG-12 (Machine Pistol)","Deployable Shield, Nitro Cell, Observation Blocker",False,False,False,False,False,False
+Nokk,Attacker,2,"FMG-9 (Submachine Gun), SIX12 SD (Shotgun)","5.7 USG (Handgun), D-50 (Handgun)","Hard Breach Charge, Frag Grenade, Impact Emp Grenade",True,False,False,True,False,False
+Goyo,Defender,2,"Vector .45 ACP (Submachine Gun), TCSG12 (Shotgun)",P229 (Handgun),"Proximity Alarm, Bulletproof Camera, Impact Grenade",True,False,True,False,False,False
+Amaru,Attacker,2,"G8A1 (Light Machine Gun), SuperNova (Shotgun)","Gonne-6 (Hand Cannon), SMG-11 (Machine Pistol), ITA12S (Shotgun)","Stun Grenade, Hard Breach Charge",True,True,False,True,True,False
+Kali,Attacker,2,CSRX 300 (Marksman Rifle),"SPSMG9 (Machine Pistol), C75 Auto (Machine Pistol), P226 Mk 25 (Handgun)","Breach Charge, Claymore",False,False,False,True,True,False
+Wamai,Defender,2,"AUG A2 (Assault Rifle), MP5K (Submachine Gun)","P12 (Handgun), Keratos .357 (Handgun)","Proximity Alarm, Impact Grenade",False,False,False,False,False,False
+Iana,Attacker,2,"ARX200 (Assault Rifle), G36C (Assault Rifle)","Gonne-6 (Hand Cannon), Mk1 9mm (Handgun)","Impact Emp Grenade, Smoke Grenade",True,False,True,True,True,False
+Oryx,Defender,2,"SPAS-12 (Shotgun), T-5 SMG (Submachine Gun)","Bailiff 410 (Shotgun), USP40 (Handgun)","Barbed Wire, Proximity Alarm",False,True,False,True,False,True
+Melusi,Defender,1,"MP5 (Submachine Gun), Super 90 (Shotgun)","ITA12S (Shotgun), RG15 (Handgun)","Bulletproof Camera, Impact Grenade",False,True,True,True,False,True
+Ace,Attacker,2,"AK-12 (Assault Rifle), M1014 (Shotgun)",P9 (Handgun),"Breach Charge, Claymore",True,False,False,True,True,False
+Zero,Attacker,3,"MP7 (Submachine Gun), SC3000K (Assault Rifle)","5.7 USG (Handgun), Gonne-6 (Hand Cannon)","Hard Breach Charge, Claymore",True,False,True,True,True,False
+Aruni,Defender,1,"P10 RONI (Submachine Gun), Mk 14 EBR (Marksman Rifle)",PRB92 (Handgun),"Bulletproof Camera, Barbed Wire",False,False,True,False,False,False
+Flores,Attacker,2,"AR33 (Assault Rifle), SR-25 (Marksman Rifle)",GSh-18 (Handgun),"Stun Grenade, Claymore",True,False,True,True,False,False
+Thunderbird,Defender,2,"SPAS-15 (Shotgun), Spear .308 (Assault Rifle)","Bearing 9 (Machine Pistol), Q-929 (Handgun)","Barbed Wire, Bulletproof Camera, Deployable Shield",False,False,True,False,False,False
+Osa,Attacker,1,"556xi (Assault Rifle), PDW9 (Submachine Gun)",PMM (Handgun),"Claymore, Frag Grenade, Impact Emp Grenade",True,False,False,True,False,False
+Thorn,Defender,2,"UZK50Gi (Submachine Gun), M870 (Shotgun)","1911 TACOPS (Handgun), C75 Auto (Machine Pistol)","Deployable Shield, Barbed Wire",False,False,False,False,False,False
+Azami,Defender,2,"9X19SVN (Submachine Gun), ACS12 (Shotgun)",D-50 (Handgun),"Impact Grenade, Barbed Wire",False,False,False,False,False,False
+Sens,Attacker,3,"417 (Marksman Rifle), POF9 (Assault Rifle)",SDP 9mm (Handgun),"Claymore, Frag Grenade, Hard Breach Charge",True,False,False,True,False,False
+Grim,Attacker,3,"552 Commando (Assault Rifle), SG-CQB (Shotgun)","Bailiff 410 (Shotgun), P229 (Handgun)","Claymore, Hard Breach Charge, Impact Emp Grenade",True,True,False,True,False,False
+Solis,Defender,2,"ITA12L (Shotgun), P90 (Submachine Gun)",SMG-11 (Machine Pistol),"Bulletproof Camera, Proximity Alarm",False,False,True,False,False,False
+Brava,Attacker,3,"PARA-308 (Assault Rifle), CAMRS (Marksman Rifle)","USP40 (Handgun), Super Shorty (Shotgun)","Smoke Grenade, Claymore",True,True,True,True,False,False
+Fenrir,Defender,2,"MP7 (Submachine Gun), SASG-12 (Shotgun)","5.7 USG (Handgun), Bailiff 410 (Shotgun)","Bulletproof Camera, Observation Blocker",False,True,True,True,False,True
+Ram,Attacker,1,"LMG-E (Light Machine Gun), R4-C (Assault Rifle)","ITA12S (Shotgun), Mk1 9mm (Handgun)","Smoke Grenade, Stun Grenade",True,True,False,True,True,False
+Tubarao,Defender,2,"MPX (Submachine Gun), AR-15.50 (Assault Rifle)",P226 Mk 25 (Handgun),"Nitro Cell, Proximity Alarm",False,False,False,False,False,False
+Deimos,Attacker,2,"AK-74M (Assault Rifle), M590A1 (Shotgun)",.44 VENDETTA (Handgun),"Frag Grenade, Hard Breach Charge",True,False,False,True,False,False
