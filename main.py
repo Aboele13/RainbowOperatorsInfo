@@ -90,7 +90,7 @@ def scrape_from_int():
             if "Gadget" in title:
                 for gadget in weapon_div.select('div.operator__loadout__weapon'):
                     gadget_name = gadget.find('p').text.strip()
-                    gadgets.append(proper_case(gadget_name))
+                    gadgets.append(proper_case(gadget_name).replace("Emp ", "EMP "))
 
         data.append({
             "Name": proper_case(unidecode(name)),

@@ -207,10 +207,16 @@
                 const rushCell = cells[10];
                 const rotateCell = cells[11];
         
+                // Filtering logic
                 const nameMatch = nameCell && nameCell.textContent.toLowerCase().includes(searchValue);
                 const sideMatch = sideCell && sideCell.textContent.toLowerCase() === sideValue;
                 const speedMatch = speedCell && (speedValue === "Any" || speedCell.textContent === speedValue);
-                const gadgetMatch = gadgetCell && (gadgetValue === "any" || gadgetCell.textContent.toLowerCase().includes(gadgetValue));
+                
+                let gadgetMatch = true;
+                if (gadgetValue !== "any") {
+                    const gadgets = gadgetCell ? gadgetCell.textContent.toLowerCase().split(',').map(g => g.trim()) : [];
+                    gadgetMatch = gadgets.includes(gadgetValue);
+                }
         
                 // Checkbox match logic
                 const autoAcogMatch = !autoAcogChecked || (acogCell && acogCell.textContent.trim() === "True");
@@ -228,7 +234,6 @@
                 }
             });
         }
-        
 
         document.addEventListener('DOMContentLoaded', loadCSV);
     </script>
