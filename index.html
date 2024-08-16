@@ -192,7 +192,7 @@
             const makeRotateChecked = document.getElementById('makeRotate').checked;
         
             const table = document.getElementById('opsTable');
-            const rows = table.querySelectorAll('tr:not(:first-child)');
+            const rows = table.querySelectorAll('tr:not(:first-child)'); // Exclude header row
         
             rows.forEach(row => {
                 const cells = Array.from(row.children);
@@ -200,12 +200,12 @@
                 const sideCell = cells[1];
                 const speedCell = cells[2];
                 const gadgetCell = cells[5]; // Adjust index based on your table structure
-                const acogCell = cells[6];
-                const shotgunCell = cells[7];
-                const camCell = cells[8];
-                const hatchCell = cells[9];
-                const rushCell = cells[10];
-                const rotateCell = cells[11];
+                const acogCell = cells[6]; // Column index for Auto ACOG
+                const shotgunCell = cells[7]; // Column index for Secondary Shotgun
+                const camCell = cells[8]; // Column index for Extra Cam
+                const hatchCell = cells[9]; // Column index for Open Hatches
+                const rushCell = cells[10]; // Column index for Rush Barricades
+                const rotateCell = cells[11]; // Column index for Make Rotates
         
                 // Filtering logic
                 const nameMatch = nameCell && nameCell.textContent.toLowerCase().includes(searchValue);
