@@ -1,6 +1,6 @@
 Name,Side,Speed,Primaries,Secondaries,Gadgets,Auto ACOG,Secondary Shotgun,Extra Cam,Open Hatches,Rush Barricades,Make Rotates
-Striker,Attacker,2,"M4 (Assault Rifle), M249 (Light Machine Gun)","5.7 USG (Handgun), ITA12S (Shotgun)","Breach Charge, Claymore, Frag Grenade, Hard Breach Charge, Smoke Grenade, Stun Grenade, Impact EMP Grenade",True,True,False,True,True,False
 Sentry,Defender,2,"Commando 9 (Assault Rifle), M870 (Shotgun)","C75 Auto (Machine Pistol), Super Shorty (Shotgun)","Barbed Wire, Bulletproof Camera, Deployable Shield, Observation Blocker, Impact Grenade, Nitro Cell, Proximity Alarm",False,True,True,True,False,True
+Striker,Attacker,2,"M4 (Assault Rifle), M249 (Light Machine Gun)","5.7 USG (Handgun), ITA12S (Shotgun)","Breach Charge, Claymore, Frag Grenade, Hard Breach Charge, Smoke Grenade, Stun Grenade, Impact EMP Grenade",True,True,False,True,True,False
 Kapkan,Defender,2,"9x19VSN (Submachine Gun), SASG-12 (Shotgun)","PMM (Handgun), GSh-18 (Handgun)","Nitro Cell, Bulletproof Camera",False,False,True,False,False,False
 Tachanka,Defender,1,"DP27 (Light Machine Gun), 9x19VSN (Submachine Gun)","PMM (Handgun), GSh-18 (Handgun), Bearing 9 (Machine Pistol)","Barbed Wire, Proximity Alarm, Deployable Shield",False,False,False,False,False,True
 Glaz,Attacker,3,OTs-03 (Marksman Rifle),"PMM (Handgun), Gonne-6 (Hand Cannon), Bearing 9 (Machine Pistol)","Smoke Grenade, Frag Grenade, Claymore",False,False,False,True,True,False
@@ -72,3 +72,4 @@ Fenrir,Defender,2,"MP7 (Submachine Gun), SASG-12 (Shotgun)","5.7 USG (Handgun), 
 Ram,Attacker,1,"LMG-E (Light Machine Gun), R4-C (Assault Rifle)","ITA12S (Shotgun), Mk1 9mm (Handgun)","Smoke Grenade, Stun Grenade",True,True,False,True,True,False
 Tubarao,Defender,2,"MPX (Submachine Gun), AR-15.50 (Assault Rifle)",P226 Mk 25 (Handgun),"Nitro Cell, Proximity Alarm",False,False,False,False,False,False
 Deimos,Attacker,2,"AK-74M (Assault Rifle), M590A1 (Shotgun)",.44 VENDETTA (Handgun),"Frag Grenade, Hard Breach Charge",True,False,False,True,False,False
+Skopos,Defender,2,PCX-33 (Assault Rifle),P229 (Handgun),"Impact Grenade, Proximity Alarm",False,False,True,False,False,False

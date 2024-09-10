@@ -132,7 +132,7 @@ def update_personal_cols():
     df["Secondary_Shotgun"] = df.apply(lambda row: "Shotgun" in row.get("Secondaries", "") or row.get("Name", "") == "Buck", axis=1)
     
     # extra cam (both)
-    ops_with_xtra_cam = ["Brava", "Flores", "Zero", "Iana", "Twitch", "Mozzie", "Maestro", "Echo", "Valkyire"]
+    ops_with_xtra_cam = ["Brava", "Flores", "Zero", "Iana", "Twitch", "Mozzie", "Maestro", "Echo", "Valkyire", "Skopos"]
     df["Extra_Cam"] = df.apply(lambda row: row.get("Name", "") in ops_with_xtra_cam or "Bulletproof Camera" in row.get("Gadgets", ""), axis=1)
 
     # open hatches (attack)
