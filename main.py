@@ -144,7 +144,7 @@ def update_personal_cols():
     df["Rush_Barricades"] = df.apply(lambda row: row.get("Name", "") in att_with_rush_barr or "Gonne-6" in row.get("Secondaries", "") or "Breach Charge" in [gadget.strip() for gadget in row.get("Gadgets", "").split(",")], axis = 1)
     
     # rotates (defense)
-    df["Make_Rotates"] = df.apply(lambda row: row.get("Side", "") == "Defender" and (row.get("Name", "") == "Oryx" or row.get("Name", "") == "Tachanka" or row.get("Secondary_Shotgun", False) or "Impact Grenades" in row.get("Gadgets", "")), axis=1)
+    df["Make_Rotates"] = df.apply(lambda row: row.get("Side", "") == "Defender" and (row.get("Name", "") == "Oryx" or row.get("Name", "") == "Tachanka" or row.get("Secondary_Shotgun", False) or "Impact Grenade" in row.get("Gadgets", "")), axis=1)
 
     df.columns = df.columns.str.replace('_', ' ') # clean column headers
     
