@@ -24,7 +24,7 @@ Mute,Defender,1,"MP5K (Submachine Gun), M590A1 (Shotgun)","P226 Mk 25 (Handgun),
 Frost,Defender,2,"Super 90 (Shotgun), 9mm C1 (Submachine Gun)","Mk1 9mm (Handgun), ITA12S (Shotgun)","Bulletproof Camera, Deployable Shield",True,True,True,True,False,True
 Buck,Attacker,2,"C8-SFW (Assault Rifle), CAMRS (Marksman Rifle)",Mk1 9mm (Handgun),"Hard Breach Charge, Stun Grenade",True,True,False,True,False,False
 Valkyrie,Defender,2,"MPX (Submachine Gun), SPAS-12 (Shotgun)",D-50 (Handgun),"Impact Grenade, Nitro Cell",False,False,False,False,False,True
-Blackbeard,Attacker,2,"Mk17 CQB (Assault Rifle), SR-25 (Marksman Rifle)",D-50 (Handgun),"Stun Grenade, Frag Grenade, Claymore",True,False,False,True,False,False
+Blackbeard,Attacker,1,"Mk17 CQB (Assault Rifle), SR-25 (Marksman Rifle)",D-50 (Handgun),"Claymore, Frag Grenade",True,False,False,True,True,False
 Capitao,Attacker,3,"M249 (Light Machine Gun), PARA-308 (Assault Rifle)","Gonne-6 (Hand Cannon), PRB92 (Handgun)","Claymore, Hard Breach Charge, Impact EMP Grenade",True,False,False,True,True,False
 Caveira,Defender,3,"M12 (Submachine Gun), SPAS-15 (Shotgun)",Luison (Handgun),"Proximity Alarm, Impact Grenade, Observation Blocker",False,False,False,False,False,True
 Echo,Defender,1,"MP5SD (Submachine Gun), SuperNova (Shotgun)","Bearing 9 (Machine Pistol), P229 (Handgun)","Impact Grenade, Deployable Shield",True,False,True,False,False,True

@@ -140,7 +140,7 @@ def update_personal_cols():
     df["Open_Hatches"] = df.apply(lambda row: row.get("Secondary_Shotgun", False) or "Gonne-6" in row.get("Secondaries", "") or row.get("Name", "") in att_with_soft_breach or any(gadget in row.get("Gadgets", "") for gadget in ["Frag Grenade", "Hard Breach Charge", "Breach Charge"]), axis=1)
     
     # rush barricades (attack)
-    att_with_rush_barr = ["Ash", "Zofia", "Ram", "Sledge"]
+    att_with_rush_barr = ["Ash", "Zofia", "Ram", "Sledge", "Blackbeard"]
     df["Rush_Barricades"] = df.apply(lambda row: row.get("Name", "") in att_with_rush_barr or "Gonne-6" in row.get("Secondaries", "") or "Breach Charge" in [gadget.strip() for gadget in row.get("Gadgets", "").split(",")], axis = 1)
     
     # rotates (defense)
